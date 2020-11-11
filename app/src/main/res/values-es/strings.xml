@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="slogan">Los mejores servidores</string>
+
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="error_invalid_email">El email es inválido</string>
+    <string name="error_invalid_password">La contraseña es corta</string>
+    <string name="error_incorrect_password">La contraseña es incorrecta</string>
+    <string name="error_field_required">Este campo es obligatorio</string>
+    // <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."</string>
+    <string name="username_hint">usuario</string>
+    <string name="LoginButton_text">INICIAR</string>
+    <string name="RegButton_text">REGISTRAR</string>
+    <string name="signup_text">No tienes cuenta? Regístrate</string>
+    <string name="password_hint">contraseña</string>
+    <string name="email_hint">email</string>
+    <string name="signup_button_label">email</string>
+    <string name="cancel_button_label">CANCELAR</string>
+</resources>
