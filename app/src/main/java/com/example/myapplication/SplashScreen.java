@@ -11,8 +11,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 /**
- * Created by ernesto on 29/01/16.
- * @version 0.1
+ * -Crea un activity con una animacion y arranca el login
+ * @author Ivi
+ * @see LoginActivity
  */
 
 public class SplashScreen extends Activity {
@@ -33,9 +34,11 @@ public class SplashScreen extends Activity {
         //myTitle.setTypeface(typeface);
 
         //implements and starts animation
-        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.shake);
+        Animation myanim = AnimationUtils.loadAnimation(this, R.anim.alpha);
+        Animation myanim2 = AnimationUtils.loadAnimation(this, R.anim.shake);
 
-        mySubtitle.startAnimation(myanim);
+        myImage.startAnimation(myanim);
+        mySubtitle.startAnimation(myanim2);
         openApp(true);
     }
 

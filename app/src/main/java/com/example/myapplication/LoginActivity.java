@@ -9,6 +9,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+/**
+ * Crea activity Login para iniciar sesion o registrarse
+ * @author Ivi
+ * @see SignupActivity
+ */
+
 public class LoginActivity extends Activity {
     Button btnLogin;
     TextView txtSignUp;
