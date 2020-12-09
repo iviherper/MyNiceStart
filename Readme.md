@@ -18,6 +18,6 @@
 
     ![Login](img/mainAct.PNG)
 
-* Main1
+* Main2
 
     ![Login](img/mainAct2.PNG)
