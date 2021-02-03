@@ -19,5 +19,10 @@
     <string name="email_hint">email</string>
     <string name="signup_button_label">email</string>
     <string name="cancel_button_label">CANCEL</string>
+    <string name="item1">item1</string>
+    <string name="item2">item2</string>
+    <string name="app_bar_menu_share">Share</string>
+    <string name="app_bar_menu_bookmark">Bookmark</string>
+    <string name="app_bar_menu_search">Search</string>
 
 </resources>
