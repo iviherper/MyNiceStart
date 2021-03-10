@@ -21,3 +21,11 @@
 * Main2
 
     ![Login](img/mainAct2.PNG)
+    
+* ContextMenu
+
+    ![Login](img/context.PNG)
+    
+* AlertDialog
+
+    ![Login](img/alert.PNG)
