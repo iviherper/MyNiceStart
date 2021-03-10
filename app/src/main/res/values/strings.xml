@@ -24,5 +24,9 @@
     <string name="app_bar_menu_share">Share</string>
     <string name="app_bar_menu_bookmark">Bookmark</string>
     <string name="app_bar_menu_search">Search</string>
+    <string name="bottom_nav_favorites_title">Favorites</string>
+    <string name="bottom_nav_music_title">Music</string>
+    <string name="bottom_nav_places_title">Places</string>
+    <string name="bottom_nav_news_title">News</string>
 
 </resources>
