@@ -1,15 +1,19 @@
 package com.example.myapplication;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomappbar.BottomAppBar;
+import com.squareup.picasso.Picasso;
 
 public class MainActivity2 extends AppCompatActivity {
     BottomAppBar botonappbar;
@@ -22,11 +26,34 @@ public class MainActivity2 extends AppCompatActivity {
         findViewById(R.id.fab).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity2.this, "Vamos al main 3.", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity2.this, MainActivity3.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(intent);
+                Toast.makeText(MainActivity2.this, "Mostrando AlertDialog.", Toast.LENGTH_SHORT).show();
+                ImageView image = new ImageView(MainActivity2.this);
+                Picasso.get().load("https://pbs.twimg.com/profile_images/986618670666350592/CRxcpOzi_400x400.png").into(image);
+                AlertDialog.Builder builder =
+                        new AlertDialog.Builder(MainActivity2.this).
+                                setMessage("Soy un AlertDialog de MyNiceStart").
+                                setCancelable(true).
+                                setPositiveButton("enviar", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.dismiss();
+                                    }
+                                }).
+                                setCancelable(true).
+                                setPositiveButton("enviar", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.dismiss();
+                                    }
+                                }).
+                                setPositiveButton("Cerrar", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        dialog.dismiss();
+                                    }
+                                }).
+                                setView(image);
+                builder.create().show();
             }
         });
         botonappbar.setNavigationOnClickListener(new View.OnClickListener() {
